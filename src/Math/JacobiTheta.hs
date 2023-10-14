@@ -84,7 +84,7 @@ calctheta3 z tau =
       go n res
         | isNaN modulus = error "NaN has occured in the summation."
         | isInfinite modulus = error "Infinity reached in the summation."
-        | modulus == 0 = error "Zero has occured in the summation."
+--        | modulus == 0 = error "Zero has occured in the summation."
         | n >= 3 && areClose res resnew = log res
         | otherwise = go (n + 1) resnew
           where
